@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div id="brandname">
+                    <h2 align="center">Machine Learning Setiment Analysis Application Containerization using Docker</h2>
+                </div>
+                <hr/>
+                <br/>
+            <h2 align="center">Twitter Sentiment Analysis</h2>
+            </div>
+
+        </header>
+
+        <div class="ml-container" align="center">
+            <form action="{{ url_for('predict')}}" method="POST">
+                <p>Enter your message here</p>
+                <textarea name="message" rows="4" cols="60"></textarea>
+                <br/>
+                <br/>
+                <input type="submit" class="btn-info" value="predict">
+            </form>
+        </div>
+    </body>
+</html>
